@@ -1,4 +1,4 @@
-CREATE TABLE colors (
+CREATE TABLE color (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     color_code TEXT NOT NULL, 
     color_url TEXT NOT NULL
@@ -16,7 +16,7 @@ CREATE TABLE canvas (
     canvas_quantity INTEGER NOT NULL
 )
 
-CREATE TABLE paintings (
+CREATE TABLE painting (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     painting_year INTEGER NOT NULL,
     painting_classification TEXT NOT NULL
