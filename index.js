@@ -10,6 +10,7 @@ app.post("/colors", async (req, res) => {
   //   .then(color => res.send(color));
 });
 
+/*
 app.get("/colors", (req, res) => {
   Color.find().then((color) => res.send(color));
 });
@@ -21,5 +22,6 @@ app.put("/colors", (req, res) => {
 app.delete("/colors", (req, res) => {
   Color.find().then((color) => res.send(color));
 });
+*/
 
 module.exports = app;
