@@ -1,5 +1,17 @@
 # 05_postgres
 
+### Requirements
+
+Create and test at least 5 model classes. Then create all CRUD routes for at least one model. Test your routes with supertest.
+
+### Rubric 
+
+* Five models (5 pts)
+
+* CRUD routes for your model (2.5 pts)
+
+* Test CRUD routes (2.5 pts)
+
 ### A complete lab assignment includes:
 * A README.md file that describes your work, conforming to the template
 
