@@ -22,6 +22,10 @@ app.get("/colors", (req, res) => {
   Color.find().then((color) => res.send(color));
 });
 
+app.get("/colors/:id", (req, res) => {
+  Color.findByID(req.params.id).then((color) => res.send(color));
+});
+
 // PUT validated in Postman
 app.put("/colors/:id", (req, res) => {
   Color.update(req.params.id, req.body).then((color) => res.send(color));
