@@ -6,6 +6,16 @@ require("dotenv").config();
 
 const Color = require("./lib/models/Color");
 
+// test route
+const Artist = require("./lib/models/Artist");
+
+app.post("/artist", (req, res) => {
+  Artist.insert(req.body).then((artist) => res.send(artist));
+});
+
+app.get("/artist", (req, res) => {
+  Artist.find().then((artist) => res.send(artist));
+});
 /*
 A POST req containing this raw JSON to localhost:7890/colors successfully adds to the database
 {
