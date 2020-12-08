@@ -27,3 +27,4 @@ CREATE TABLE artist (
     artist_name TEXT NOT NULL,
     artist_contact TEXT NOT NULL
 )
+
