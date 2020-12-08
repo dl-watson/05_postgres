@@ -7,14 +7,14 @@ require("dotenv").config();
 const Color = require("./lib/models/Color");
 
 // test route
-const Canvas = require("./lib/models/Canvas");
+const Medium = require("./lib/models/Medium");
 
-app.post("/canvas", (req, res) => {
-  Canvas.insert(req.body).then((canvas) => res.send(canvas));
+app.post("/medium", (req, res) => {
+  Medium.insert(req.body).then((medium) => res.send(medium));
 });
 
-app.get("/canvas", (req, res) => {
-  Canvas.find().then((canvas) => res.send(canvas));
+app.get("/medium", (req, res) => {
+  Medium.find().then((medium) => res.send(medium));
 });
 /*
 A POST req containing this raw JSON to localhost:7890/colors successfully adds to the database
